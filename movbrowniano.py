@@ -32,7 +32,7 @@ xs = np.linspace(w10[idx].min(), w10[idx].max(), 100)
 axes[0].plot(xs, m*xs + b, color='red', lw=2, label=f'Pendiente = {m:.3f}')
 axes[0].legend()
 
-# 2) Histograma 2D (densidad) para ver mejor la correlación
+# 2) Histograma 2D (densidad)
 hb = axes[1].hexbin(w10, w20, gridsize=60, cmap='viridis', bins='log')
 axes[1].set_xlabel(r'$W_{10}$')
 axes[1].set_ylabel(r'$W_{20}$')
